@@ -1,0 +1,3 @@
+export http_proxy="http://webproxysea.nordstrom.net:8181"
+export https_proxy=$http_proxy
+export no_proxy='nordstrom.net'
