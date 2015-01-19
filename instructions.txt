@@ -27,3 +27,11 @@ Set this font in iTerm2 (14px) (iTerm -> preferences -> profiles -> text).
 - Non-ASCII Font -> "Change Font"
 
 Restart iTerm for all changes to take effect.
+
+
+Install package control
+  -Sublimelinter 
+  -Sublimelinter rubocop
+  -Brogrammer theme
+
+Install Karabiner & remap keys
