@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/ut9p/.oh-my-zsh'
+let g:netrw_dirhist_2='/Users/ut9p/chef/cookbooks/ssi_docs_ui/.git'
+let g:netrw_dirhist_3='/Users/ut9p/.oh-my-zsh'
