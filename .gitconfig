@@ -1,0 +1,19 @@
+[push]
+  default = simple
+[user]
+  name = Landon Alder
+  email = landon.d.alder@exchange.nordstrom.com
+
+[url "git+ssh://git.nordstrom.net"]
+  insteadOf = https://git.nordstrom.net/
+  insteadOf = http://git.nordstrom.net/
+  insteadOf = git://git.nordstrom.net/
+
+[core]
+  excludesfile = /Users/ut9p/.gitignore_global
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+
+[color]
+	ui = auto
