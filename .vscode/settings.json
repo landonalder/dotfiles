@@ -11,5 +11,38 @@
   "window.zoomLevel": 0,
   "editor.fontSize": 14,
   "editor.fontFamily": "Operator Mono Lig, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true
+  "editor.fontLigatures": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "entity.name.type.class", //class names,
+          "entity.other.attribute-name",
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  }
 }
+
