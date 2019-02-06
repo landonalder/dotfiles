@@ -37,7 +37,6 @@ set showmode        " show current mode at bottom
 set showmatch       " highlight matching [{()}]
 set number          " show line numbers
 set wildmenu        " visual autocomplete for command menu
-colorscheme solarized
 highlight clear SignColumn
 
 " editing stuff "
