@@ -1,0 +1,20 @@
+iTerm2
+
+    http://www.iterm2.com/#/section/downloads
+
+Set the color theme to solarized dark
+
+oh my zsh (https://github.com/robbyrussell/oh-my-zsh)
+
+    curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+edit `~/.zshrc` and set `ZSH_THEME="agnoster"`
+
+install a patched font
+
+https://github.com/abertsch/Menlo-for-Powerline/blob/master/Menlo%20for%20Powerline.ttf
+
+Set this font in iTerm2 (iTerm -> preferences -> profiles -> text -> Change Font).
+
+Restart iTerm for all changes to take effect.
+
