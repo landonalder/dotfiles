@@ -1,48 +1,104 @@
 {
-  "editor.formatOnSave": true,
-  "javascript.validate.enable": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.enablePreview": false,
-  "workbench.colorTheme": "Atom One Dark",
-  "prettier.eslintIntegration": true,
-  "editor.tabSize": 2,
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "explorer.autoReveal": false,
-  "window.zoomLevel": 0,
-  "editor.fontSize": 14,
-  "editor.fontFamily": "Operator Mono Lig, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "comment",
-          "entity.name.type.class", //class names,
-          "entity.other.attribute-name",
-          "keyword", //import, export, return…
-          "constant", //String, Number, Boolean…, this, super
-          "storage.modifier", //static keyword
-          "storage.type.class.js", //class keyword
-        ],
-        "settings": {
-          "fontStyle": "italic"
+    "editor.formatOnSave": false,
+    "javascript.validate.enable": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "explorer.autoReveal": false,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Cascadia Code Light, Operator Mono Lig, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "entity.name.type.class", //class names,
+            "entity.other.attribute-name",
+            "keyword", //import, export, return…
+            "constant", //String, Number, Boolean…, this, super
+            "storage.modifier", //static keyword
+            "storage.type.class.js" //class keyword
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            //following will be excluded from italics (VSCode has some defaults for italics)
+            "invalid",
+            "keyword.operator",
+            "constant.numeric.css",
+            "keyword.other.unit.px.css",
+            "constant.numeric.decimal.js",
+            "constant.numeric.json"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
         }
-      },
-      {
-        "scope": [
-          //following will be excluded from italics (VSCode has some defaults for italics)
-          "invalid",
-          "keyword.operator",
-          "constant.numeric.css",
-          "keyword.other.unit.px.css",
-          "constant.numeric.decimal.js",
-          "constant.numeric.json"
-        ],
-        "settings": {
-          "fontStyle": ""
+      ]
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    "proctor.location": "./src/resources/webapp/static/scripts/**/*.js",
+    "proctor.pattern": "proctorGroups",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "jest.enableSnapshotUpdateMessages": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "yaml.schemas": {
+        "file:///Users/lalder/.vscode/extensions/atlassian.atlascode-2.8.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.jqlList": [
+        {
+            "id": "f93ba5f8-e2b1-4559-abef-f33b9701e650",
+            "enabled": true,
+            "name": "My bugs.indeed.com Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "bugs.indeed.com",
+            "monitor": true
         }
-      }
-    ]
-  }
+    ],
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "siteId": "bugs.indeed.com",
+        "projectKey": "ITBADSBE"
+    },
+    "java.requirements.JDK11Warning": false,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.semanticHighlighting.enabled": true,
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "git.autofetch": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "extensions.ignoreRecommendations": false,
+    "explorer.confirmDelete": false,
+    "editor.detectIndentation": false,
+    "python.showStartPage": false,
+    "workbench.colorTheme": "GitHub Dark",
+    "jest.pathToJest": "node_modules/.bin/jest --coverage --watchAll --coverageDirectory ./coverage/vscode --coverageReporters lcov",
+    "jest.coverageFormatter": "GutterFormatter",
+    "jest.showCoverageOnLoad": true,
+    "jest.runAllTestsFirst": false,
+    "wallaby.codeLensFeature.runTest": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "remote.SSH.configFile": "/Users/lalder/Desktop/ssh_config.txt",
+    "editor.inlineSuggest.enabled": true,
+    "redhat.telemetry.enabled": false,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": false,
+        "markdown": false
+    },
+    "explorer.confirmDragAndDrop": false
 }
-
