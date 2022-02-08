@@ -1,0 +1,26 @@
+[user]
+	name = Landon Alder
+	email = lalder@indeed.com
+[include]
+	path = /Users/lalder/env/etc/git/aliases
+	path = /Users/lalder/env/etc/git/general-config
+	path = /etc/git/aliases
+	path = /etc/git/general-config
+[core]
+	excludesfile = /Users/lalder/env/etc/git/gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	trustExitCode = true
+	cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[mergetool]
+	keepBackup = false
